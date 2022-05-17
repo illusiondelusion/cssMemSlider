@@ -13,18 +13,32 @@
 <body>
     <div class="slider-wrapper">
         <div class="slider">
-            <input type="radio" name="slider" id="slide-1" checked>
-            <div class="slider-item"></div>
-            <input type="radio" name="slider" id="slide-2">
-            <div class="slider-item"></div>
-            <input type="radio" name="slider" id="slide-3">
-            <div class="slider-item"></div>
-            <input type="radio" name="slider" id="slide-4">
-            <div class="slider-item"></div>
-            <label for="slide-1" class="slider-text"></label>
-            <label for="slide-1" class="slider-text"></label>
-            <label for="slide-1" class="slider-text"></label>
-            <label for="slide-1" class="slider-text"></label>
+            <input class="slider-input" type="radio" name="slider" id="slide-1" checked aria-hidden="true" hidden="">
+            <div class="slider-item">
+                <img class="slider-img" src="./assets/slide1.jpg" alt="slide-1">
+            </div>
+            <input class="slider-input" type="radio" name="slider" id="slide-2" aria-hidden="true" hidden="">
+            <div class="slider-item">
+                <img class="slider-img" src="./assets/slide2.jpg" alt="slide-2">
+            </div>
+            <input class="slider-input" type="radio" name="slider" id="slide-3" aria-hidden="true" hidden="">
+            <div class="slider-item">
+                <img class="slider-img" src="./assets/slide3.jpg" alt="slide-3">
+            </div>
+            <input class="slider-input" type="radio" name="slider" id="slide-4" aria-hidden="true" hidden="">
+            <div class="slider-item">
+                <img class="slider-img" src="./assets/slide4.jpg" alt="slide-4">
+            </div>
+            <label for="slide-1" class="slider-text slider-text-1">Когда пытаешься отрефакторить свой старый код</label>
+            <label for="slide-2" class="slider-text slider-text-2"></label>
+            <label for="slide-3" class="slider-text slider-text-3">К окончанию обучения в RS School</label>
+            <label for="slide-4" class="slider-text slider-text-4">Хорошего дня, проверяющий! :)</label>
+            <ul class="controls">
+                <li class="slider-control"><label for="slide-1" class="slider-bullet"></label></li>
+                <li class="slider-control"><label for="slide-2" class="slider-bullet"></label></li>
+                <li class="slider-control"><label for="slide-3" class="slider-bullet"></label></li>
+                <li class="slider-control"><label for="slide-4" class="slider-bullet"></label></li>
+            </ul>
         </div>
     </div>
 </body>
