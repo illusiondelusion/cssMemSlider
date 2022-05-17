@@ -5,10 +5,10 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: bisque;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     color: rgb(177, 129, 89);
 }
 
@@ -29,6 +29,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    row-gap: 10px;
 }
 
 .slider-item {
@@ -70,17 +71,45 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: rgb(235, 194, 141);
-    border: 2px solid rgb(235, 194, 141);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .slider-bullet {
     display: block;
     cursor: pointer;
-    width: 10px;
-    height: 10px;
-    background-color: antiquewhite;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(201, 147, 104);
+    border: 2px solid rgb(201, 147, 104);
     border-radius: 50%;
-    padding: 8px;
+    transition: 0.3s;
 }
+
+.slider-control:hover .slider-bullet {
+    cursor: pointer;
+    background-color: white;
+}
+
+.slider-control:active .slider-bullet {
+    cursor: pointer;
+    background-color: rgb(235, 194, 141);
+}
+
+#slide-1:checked ~ .controls .slider-bullet-1,
+#slide-2:checked ~ .controls .slider-bullet-2,
+#slide-3:checked ~ .controls .slider-bullet-3,
+#slide-4:checked ~ .controls .slider-bullet-4,
+#slide-5:checked ~ .controls .slider-bullet-5 {
+    background-color: bisque;
+}
+
+.slider-input:checked ~ .controls .slider-control:hover .slider-bullet {
+    border: 2px solid white;
+}
+
+.slider-input:checked ~ .controls .slider-control:active .slider-bullet {
+    border: 2px solid rgb(235, 194, 141);
+}
+
 
