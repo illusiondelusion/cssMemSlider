@@ -28,19 +28,17 @@ body {
     flex-wrap: wrap;
 }
 
-.slider-img {
-    width: 450px;
-    height: 500px;
-    border-radius: 10px;
-}
-
 .slider-item {
     display: none;
 }
 
+.slider-img {
+    border-radius: 10px;
+    width: 450px;
+}
+
 .slider-input:checked + .slider-item {
     display: block;
-    transform: translate (0, -50%);
 }
 
 .slider-text {
@@ -51,9 +49,9 @@ body {
 #slide-1:checked ~ .slider-text-1,
 #slide-2:checked ~ .slider-text-2,
 #slide-3:checked ~ .slider-text-3,
-#slide-4:checked ~ .slider-text-4 {
+#slide-4:checked ~ .slider-text-4,
+#slide-5:checked ~ .slider-text-5 {
   display: block;
-  transform: translate(0, -50%);
 }
 
 
